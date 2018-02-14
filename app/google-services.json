@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "143079494579",
+    "firebase_url": "https://mryummydemo.firebaseio.com",
+    "project_id": "mryummydemo",
+    "storage_bucket": "mryummydemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143079494579:android:2ea43db788effb01",
+        "android_client_info": {
+          "package_name": "yummy.mryummy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143079494579-g13kvlu80od2rmq503mdvaocd7mmn6lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA54thDWu-wzrssrVhApRfIs9ncvGG224A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
