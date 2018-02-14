@@ -122,6 +122,8 @@ public class AllBakeriesListActivity extends AppCompatActivity implements Locati
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(allrestaurentsAdapter); // set the Adapter to RecyclerView*/
 
+       /* shimmerRecycler = (ShimmerRecyclerView)findViewById(R.id.shimmer_recycler_view_two);
+        shimmerRecycler.showShimmerAdapter();*/
         shimmerRecycler = (ShimmerRecyclerView)findViewById(R.id.shimmer_recycler_view_two);
         shimmerRecycler.showShimmerAdapter();
 
