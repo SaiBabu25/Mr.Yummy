@@ -113,6 +113,8 @@ public class AllYummyListActivity extends AppCompatActivity implements LocationL
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(allrestaurentsAdapter); // set the Adapter to RecyclerView
 */
+       /* shimmerRecycler = (ShimmerRecyclerView)findViewById(R.id.shimmer_recycler_view_four);
+        shimmerRecycler.showShimmerAdapter();*/
         shimmerRecycler = (ShimmerRecyclerView)findViewById(R.id.shimmer_recycler_view_four);
         shimmerRecycler.showShimmerAdapter();
 
