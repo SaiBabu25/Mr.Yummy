@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- <LinearLayout
+             android:id="@+id/linear_horiz"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">-->
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_editbox"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:hint="Search food,dishes..."
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/bg"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold">
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/text_restaurents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Restaurents"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_restaurents"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="5dp"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/text_dishes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view"
+            android:text="Dishes"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_dishes"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="15dp"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical" />
+
+      <!--  <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tab_layout"/>
+-->
+    </RelativeLayout>
+</layout>

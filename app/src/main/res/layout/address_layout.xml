@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@drawable/splash_screen">
+
+   <!-- <ImageView
+        android:id="@+id/image_location"
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/address_map" />
+-->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:clickable="true">
+
+    </fragment>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="300dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address_tile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/skip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="right"
+                    android:text="SKIP"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="25dp"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                    android:textColorHint="@color/light_black"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/input_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+                        android:textColorHint="@color/light_black"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:gravity="start"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Getting Current Location..." />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_house"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                    android:textColorHint="@color/light_black"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/input_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+                        android:textColorHint="@color/light_black"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:gravity="start"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/house_nbr" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                    android:textColorHint="@color/light_black"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/input_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+                        android:textColorHint="@color/light_black"
+                        android:maxLength="32"
+                        android:maxLines="1"
+                        android:gravity="start"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/landmark" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/book_button"
+                        android:text="SAVE AND PROCEED"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+

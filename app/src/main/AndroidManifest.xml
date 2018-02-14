@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="yummy.mryummy">
+
+    <permission
+        android:name="yummy.mryummy.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="yummy.mryummy.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <!-- juspay required permissions -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreen">
+
+        <activity
+            android:name=".Splash.Splash.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+
+        <activity
+            android:name=".Splash.Registration.RegistrationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Splash.StartPage"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.ForgotPasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.ChangePasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.SetLocationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.AddressSetActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.VerifyOTPActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Registration.ProfileUpdateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Home.CategorySelectActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Home.DetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Home.OrderSuccessActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Home.HomeActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".Splash.Activity.FiltersActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Activity.FavouritesActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Splash.Activity.CartActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!--  <meta-data
+              android:name="com.google.android.maps.v2.API_KEY"
+              android:value="AIzaSyC_PNp1bS-n34d8qHuGjkga9_7zpfpmJNg" />
+  -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC_PNp1bS-n34d8qHuGjkga9_7zpfpmJNg" />
+        <meta-data
+            android:name="co.google.android.gms.version"
+            android:value="AIzaSyC_PNp1bS-n34d8qHuGjkga9_7zpfpmJNg" />
+
+        <activity
+            android:name=".Splash.Activity.AllRestaurentsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity
+            android:name=".Splash.Activity.AllBakeriesListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity
+            android:name=".Splash.Activity.AllSweetsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity
+            android:name=".Splash.Activity.AllYummyListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity
+            android:name=".Splash.Activity.SingleRestaurentDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="DuplicateActivity"></activity>
+
+        <activity android:name=".Splash.Activity.CartActivity2" />
+
+        <!--  <activity
+              android:name=".Splash.Activity.SingleItemDetailShowActivity"
+              android:screenOrientation="portrait"
+              android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>-->
+
+
+        <service
+            android:name=".Splash.Notification.FireIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".Splash.Notification.FireMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+    <meta-data android:name="instamojo.orderauth.url"
+                   android:value="http://openingsin.com/mryummy_admin/services/user/access_token.php"
+            />
+    </application>
+</manifest>

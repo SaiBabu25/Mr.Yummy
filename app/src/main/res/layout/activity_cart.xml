@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:titleTextColor="@color/black"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_weight="2"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/app200"
+                    android:id="@+id/image"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="8"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title"
+                        android:text="Sitara"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/title_text"
+                        android:text=""
+                        android:textStyle="normal"
+                        android:padding="5dp"
+                        android:textColor="@color/bg"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/s_items"
+                            android:layout_margin="2dp"/>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/card_background"/>
+
+                        <EditText
+                            android:id="@+id/moreinfoEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/white"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="12dp"
+                            android:hint="Any instructions? We promise to pass them on"/>
+
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@color/card_background"/>
+
+                            <EditText
+                                android:id="@+id/time"
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:hint="Delivery Time..."
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:background="@color/white"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:elevation="8dp">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/horizontalScrollView1"
+                                android:background="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="8dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/white"
+                                android:padding="8dp">
+                                <LinearLayout
+                                    android:layout_margin="6dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="Item Total"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="0"
+                                        android:id="@+id/itemtotal"
+                                        android:layout_gravity="end"
+                                        android:gravity="end"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_margin="6dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="GST"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="0"
+                                        android:id="@+id/gst"
+                                        android:layout_gravity="end"
+                                        android:gravity="end"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="@color/card_background"/>
+
+                                <LinearLayout
+                                    android:layout_margin="6dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="Delivery Charges"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="0"
+                                        android:id="@+id/delivery_charges"
+                                        android:layout_gravity="end"
+                                        android:gravity="end"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="@color/card_background"/>
+
+                                <LinearLayout
+                                    android:id="@+id/cooldrink_layout"
+                                    android:layout_margin="6dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:id="@+id/cooldrinkcharges"
+                                        android:text="Cooldrink Charges"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="5"
+                                        android:textColor="@color/black"
+                                        android:text="0"
+                                        android:id="@+id/cooldrink_charges"
+                                        android:layout_gravity="end"
+                                        android:gravity="end"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_margin="8dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:text="To Pay "
+                                        android:id="@+id/to_pay"
+                                        android:textStyle="bold"
+                                        android:layout_gravity="end"
+                                        android:gravity="end"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/proceed_to_pay"
+                            android:background="@color/colorPrimaryDark">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Proceed"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

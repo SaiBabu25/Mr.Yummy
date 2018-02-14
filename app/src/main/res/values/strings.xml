@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Mr.Yummy</string>
+
+
+    <string name="house_nbr">HOUSE/FLAT NO</string>
+    <string name="order_success">"Your Order has been Placed"\n "Successfully."</string>
+
+
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_refernce">Reference</string>
+    <string name="nav_item_manageaddress">Manage Address</string>
+    <string name="nav_item_notifications">Notifications</string>
+    <string name="nav_item_support">Support</string>
+    <string name="nav_item_help">Help/FAQ</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_refernce</item>
+        <item>@string/nav_item_manageaddress</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_support</item>
+        <item>@string/nav_item_help</item>
+        <item>@string/nav_item_logout</item>
+
+    </string-array>
+
+    <string name="title_home">Home</string>
+    <string name="title_refernce">Reference</string>
+    <string name="title_manageaddress">Manage Address</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_support">Support</string>
+    <string name="title_help">Help/FAQ</string>
+    <string name="title_logout">Logout</string>
+
+    <string name="item_1">Home</string>
+    <string name="item_2">Search</string>
+    <string name="item_3">Favourites</string>
+    <string name="item_4">Cart</string>
+    <string name="item_5">Account</string>
+
+    <string name="landmark">LandMark</string>
+    <string name="faqs">FAQs &amp; Links</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>
