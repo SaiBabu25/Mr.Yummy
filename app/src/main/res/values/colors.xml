@@ -13,11 +13,13 @@
     <color name = "trans_back">#F0EDEC</color>
 
 
-    <!-- Screens background color-->
+    <array name="array_dot_active">
+        <item>@color/colorPrimary</item>
+    </array>
 
-    <!-- dots inactive colors -->
-
-    <!-- dots active colors -->
+    <array name="array_dot_inactive">
+        <item>@color/black</item>
+    </array>
 
 </resources>
 

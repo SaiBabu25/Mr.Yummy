@@ -41,7 +41,7 @@ public class MyAccountFragment extends Fragment {
 
     public TextView text_prof_name,text_prof_edit,text_prof_number,divide,text_prof_email,text_logout;
     public String name,number,email;
-    public TextView text_manage_address,text_favourites,text_change_pwd,text_myaccount;
+    public TextView text_favourites,text_change_pwd,text_myaccount;
     LinearLayout linear_help;
     ImageView img_logout;
 
@@ -77,19 +77,19 @@ public class MyAccountFragment extends Fragment {
         text_prof_email = (TextView) view.findViewById(R.id.text_prof_email);
         text_logout = (TextView) view.findViewById(R.id.text_logout);
 
-        text_manage_address = (TextView) view.findViewById(R.id.text_manage_address);
+      //  text_manage_address = (TextView) view.findViewById(R.id.text_manage_address);
         text_favourites = (TextView) view.findViewById(R.id.text_favourites);
         text_change_pwd = (TextView) view.findViewById(R.id.text_change_pwd);
         text_myaccount = (TextView) view.findViewById(R.id.text_myaccount);
         img_logout = (ImageView)  view.findViewById(R.id.img_logout);
 
-        text_manage_address.setOnClickListener(new View.OnClickListener() {
+      /*  text_manage_address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent  = new Intent(getActivity(), AddressSetActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         text_favourites.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,7 +145,7 @@ public class MyAccountFragment extends Fragment {
                         .setCancelable(false)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Helper.storeLocally("user_id","null",getActivity());
+                                Helper.storeLocally("user_id","",getActivity());
                                 startActivity(new Intent(getActivity(), LoginActivity.class));
                                 getActivity().finish();
                             }

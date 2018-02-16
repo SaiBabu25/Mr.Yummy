@@ -126,7 +126,7 @@
                     android:textAllCaps="false"
                     android:textStyle="bold" />
 
-                <TextView
+               <!-- <TextView
                     android:id="@+id/text_manage_address"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                     android:layout_marginLeft="15dp"
                     android:drawablePadding="20dp"
                     android:textAllCaps="false"
-                    android:textStyle="normal" />
+                    android:textStyle="normal" />-->
 
                 <TextView
                     android:id="@+id/text_favourites"

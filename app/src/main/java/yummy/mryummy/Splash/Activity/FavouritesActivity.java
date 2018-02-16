@@ -51,11 +51,13 @@ public class FavouritesActivity extends AppCompatActivity {
         userid = Helper.getLocalValue(FavouritesActivity.this,"user_id");
         slide_text = (TextView) findViewById(R.id.slide_text);
 
-        recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
+       /* recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         // set a LinearLayoutManager with default vertical orientation
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(FavouritesActivity.this);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setLayoutManager(linearLayoutManager);*/
+        shimmerRecycler = (ShimmerRecyclerView)findViewById(R.id.shimmer_recycler_view);
+        shimmerRecycler.showShimmerAdapter();
         favouritemethod(userid);
     }
 
@@ -63,17 +65,17 @@ public class FavouritesActivity extends AppCompatActivity {
         HashMap<String, Object> map = new HashMap<>();
         map.put("user_id", userid);
 
-        final ProgressDialog progressDialog = new ProgressDialog(FavouritesActivity.this);
+       /* final ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setIndeterminate(true);
         progressDialog.setMessage("Please wait...");
-        progressDialog.show();
+        progressDialog.show();*/
 
         ApiUtils.getyummyservice().favouritelist(map)
                 .enqueue(new Callback<FavouriteResponse>() {
                     @Override
                     public void onResponse(Call<FavouriteResponse> call, Response<FavouriteResponse> response) {
                         int getStatus = Integer.parseInt(response.body().getResponseStatus().getStatuscode());
-                        progressDialog.dismiss();
+                        //   progressDialog.dismiss();
                         try{
                             if(getStatus == 200){
                                 FavouriteResponse result = response.body();
@@ -81,7 +83,8 @@ public class FavouritesActivity extends AppCompatActivity {
                                 if (result != null && result.fItemsData != null && result.fItemsData.size() != 0) {
                                     slide_text.setText("FAVOURITES  " + "("+result.fItemsData.size()+")");
                                     favouritesAdapter = new FavouritesAdapter(FavouritesActivity.this,result.getResponseStatus(),result.getFItemsData());
-                                    recyclerView.setAdapter(favouritesAdapter);
+                                    //  recyclerView.setAdapter(favouritesAdapter);
+                                    shimmerRecycler.setAdapter(favouritesAdapter);
                                 }
                             }else if(response.body().getResponseStatus().getStatuscode() == "400"){
                                 Toast.makeText(FavouritesActivity.this, "something went wrong...!", Toast.LENGTH_SHORT).show();
@@ -96,9 +99,10 @@ public class FavouritesActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(Call<FavouriteResponse> call, Throwable t) {
                         t.printStackTrace();
-                        if (progressDialog.isShowing())
-                            progressDialog.dismiss();
+                       /* if (progressDialog.isShowing())
+                            progressDialog.dismiss();*/
                     }
                 });
+
     }
 }

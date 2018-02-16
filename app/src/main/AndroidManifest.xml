@@ -54,6 +54,9 @@
             android:name=".Splash.Splash.StartPage"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".Splash.Splash.WelcomeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".Splash.Registration.LoginActivity"
             android:screenOrientation="portrait"></activity>
         <activity

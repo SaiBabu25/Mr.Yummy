@@ -35,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
                 if (/*Helper.getLocalValue(getApplicationContext(), "user_id").equals("null")
                         && Helper.getLocalValue(getApplicationContext(), "user_id").equals("")*/
                 userid == ""){
-                    Intent intent  = new Intent(getApplicationContext(),LoginActivity.class);
+                    Intent intent  = new Intent(getApplicationContext(),WelcomeActivity.class);
                     startActivity(intent);
                     finish();
                 }else{

@@ -34,16 +34,15 @@ import java.util.List;
 import java.util.Locale;
 
 import yummy.mryummy.R;
-import yummy.mryummy.Splash.Fragment.HelpFragment;
+import yummy.mryummy.Splash.Fragment.FrequentlyAskedFragment;
 import yummy.mryummy.Splash.Fragment.ItemFavouriteFragment;
 import yummy.mryummy.Splash.Fragment.ItemOneFragment;
 import yummy.mryummy.Splash.Fragment.ItemSearchFragment;
 import yummy.mryummy.Splash.Fragment.MyAccountFragment;
 import yummy.mryummy.Splash.Fragment.NotificationFragment;
-import yummy.mryummy.Splash.Fragment.ReferenceFragment;
-import yummy.mryummy.Splash.Fragment.SupportFragment;
+import yummy.mryummy.Splash.Fragment.PrivacyPolicyFragment;
+import yummy.mryummy.Splash.Fragment.TermsFragment;
 import yummy.mryummy.Splash.Helper.Helper;
-import yummy.mryummy.Splash.Model.ItemsDatum;
 import yummy.mryummy.Splash.Model.Searchitem;
 import yummy.mryummy.Splash.Registration.AddressSetActivity;
 import yummy.mryummy.Splash.Registration.LoginActivity;
@@ -232,34 +231,29 @@ public class HomeActivity extends AppCompatActivity implements FragmentDrawer.Fr
 
     private void displayView(int position) {
         Fragment fragment = null;
-        String title = getString(R.string.app_name);
-
+        String title = /*getString(R.string.app_name)*/ "";
         switch (position) {
             case 0:
                 fragment = new ItemOneFragment();
                 title = getString(R.string.title_home);
                 break;
             case 1:
-                fragment = new ReferenceFragment();
-                title = getString(R.string.title_refernce);
-                break;
-            case 2:
-                fragment = new /*ManageAddressFragment*/ ItemOneFragment();
-                title = getString(R.string.title_manageaddress);
-                break;
-            case 3:
                 fragment = new NotificationFragment();
                 title = getString(R.string.title_notifications);
                 break;
+            case 2:
+                fragment = new TermsFragment();
+                title = getString(R.string.title_terms);
+                break;
+            case 3:
+                fragment = new FrequentlyAskedFragment();
+                title = getString(R.string.title_faq);
+                break;
             case 4:
-                fragment = new SupportFragment();
-                title = getString(R.string.title_support);
+                fragment = new PrivacyPolicyFragment();
+                title = getString(R.string.title_privacy);
                 break;
             case 5:
-                fragment = new HelpFragment();
-                title = getString(R.string.title_help);
-                break;
-            case 6:
                 title = getString(R.string.title_logout);
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage("Are you sure you want to exit?")

@@ -1,41 +1,41 @@
 <resources>
     <string name="app_name">Mr.Yummy</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
 
 
     <string name="house_nbr">HOUSE/FLAT NO</string>
     <string name="order_success">"Your Order has been Placed"\n "Successfully."</string>
-
 
     <string name="action_search">Search</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
     <string name="nav_item_home">Home</string>
-    <string name="nav_item_refernce">Reference</string>
-    <string name="nav_item_manageaddress">Manage Address</string>
     <string name="nav_item_notifications">Notifications</string>
-    <string name="nav_item_support">Support</string>
-    <string name="nav_item_help">Help/FAQ</string>
+    <string name="nav_item_terms">Terms of Use</string>
+    <string name="nav_item_faq">FAQs</string>
+    <string name="nav_item_privacy">Privacy Policy</string>
     <string name="nav_item_logout">Logout</string>
 
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
-        <item>@string/nav_item_refernce</item>
-        <item>@string/nav_item_manageaddress</item>
         <item>@string/nav_item_notifications</item>
-        <item>@string/nav_item_support</item>
-        <item>@string/nav_item_help</item>
+        <item>@string/nav_item_terms</item>
+        <item>@string/nav_item_faq</item>
+        <item>@string/nav_item_privacy</item>
         <item>@string/nav_item_logout</item>
 
     </string-array>
 
     <string name="title_home">Home</string>
-    <string name="title_refernce">Reference</string>
     <string name="title_manageaddress">Manage Address</string>
     <string name="title_notifications">Notifications</string>
-    <string name="title_support">Support</string>
-    <string name="title_help">Help/FAQ</string>
+    <string name="title_terms">Terms of Use</string>
+    <string name="title_faq">FAQs</string>
+    <string name="title_privacy">Privacy Policy</string>
     <string name="title_logout">Logout</string>
 
     <string name="item_1">Home</string>
@@ -46,8 +46,38 @@
 
     <string name="landmark">LandMark</string>
     <string name="faqs">FAQs &amp; Links</string>
-
+    <string name="text_terms">Terms of Use</string>
+    <string name="terms_text"> We are committed to protecting the privacy of all visitors to the Website, including all visitors who access the Website or Service through any mobile application or other platform or device. Please read the following Privacy Policy which explains how we use and protect your information.</string>
+    <string name="terms_text_second">By visiting and/or using the Service on the Website, you agree and, where required, you consent to the collection, use, storage, disclosure and transfer of your information as set out in this policy.</string>
+    <string name="text_faqs">faq\'s</string>
+    <string name="text_privacy">Privacy Policy</string>
+    <string name="privacy_text">We are committed to protecting the privacy of all visitors to the Website, including all visitors who access the Website or Service through any mobile application or other platform or device. Please read the following Privacy Policy which explains how we use and protect your information. By visiting and/or using the Service on the Website, you agree and, where required, you consent to the collection, use, storage, disclosure and transfer of your information as set out in this policy.</string>
+    <string name="text_privacy_two">Information that we can collect from you</string>
+    <string name="privacy_text_content">When you visit the Website or use the Service to make an Order from a Restaurant through the Website, you may be asked to provide information about yourself including your name, address, contact details (such as telephone and mobile numbers and e-mail address) and payment information (such as credit or debit card information). We may also collect information about your usage of the Website and Service and information about you from the materials (such as messages and reviews) you post to the Website and the e-mails or letters you send to us. Your telephone calls to us may also be recorded for training and quality purposes.</string>
+    <string name="faqs_text_q_one">Is there a minimum order value?</string>
+    <string name="faqs_text_a_one">We have no minimum order value and you can order for any amount from single restaurant per order.</string>
+    <string name="faqs_text_q_two">What should I do if the food received is not what I requested?</string>
+    <string name="faqs_text_a_two"><![CDATA[Quick, double check the confirmation email! If there is a difference between what’s on the email and what you received, please call the support centre straight away to let them know. Of course, our team are also always happy to help you out if you’re not able to resolve this directly with the Delivery Execute, get in touch with us via our live chat and we can help too!]]></string>
+    <string name="faqs_text_q_three">What can I do if I am not happy with the food quality?</string>
+    <string name="faqs_text_a_three">Have a quick look at the email we sent containing your order details and make sure it\'s correct. If there is a difference please give the Delivery Executive a call and see how they can fix up the mistake. Or get in touch via our live chat and we can help too!</string>
+    <string name="faqs_text_q_four">Do you charge for delivery?</string>
+    <string name="faqs_text_a_four">Yes. Delivery fee varies from area to area and distance charge also might apply while choosing long distance restaurant from your current location to order your food. As we are in the initial stage, this helps to us serve you better.</string>
+    <string name="faqs_text_q_five">What can I do if my order was cancelled after I paid?</string>
+    <string name="faqs_text_a_five">Rejection is never great, so we work really hard with our restaurants to get as many orders accepted as possible. Sometimes a rejected order may look like payment has gone through, but don’t worry, it was voided and is simply pending with your bank. This may take 1-5 business days so it\'s best to give the bank a call if you have any questions.</string>
+    <string name="faqs_text_q_six">How can I cancel my order?</string>
+    <string name="faqs_text_a_six">We understand sometimes things don’t go to plan, and you might need to cancel an order. We can cancel an order if the restaurant hasn’t started cooking it yet. If the restaurant has started to cook your food there is a small chance they might still be in a position to cancel your order, so best to call support centre and find out.</string>
+    <string name="faqs_text_q_seven">Did not receive OTP?</string>
+    <string name="faqs_text_a_seven">It might be network provider problem. If not, please share the details via           support@misteryummy.in</string>
+    <string name="faqs_text_q_eight">I want an invoice for my order</string>
+    <string name="faqs_text_a_eight">Email Us  We will respond within 24-48 hrs</string>
+    <string name="faqs_text_q_nine">I want to partner my restaurant with Mr.Yummy</string>
+    <string name="faqs_text_a_nine">Partner with us  Email Us</string>
+    <string name="faqs_text_q_ten">I have a sponsorship proposal for Mr.Yummy</string>
+    <string name="faqs_text_a_ten">Email Us</string>
+    <string name="faqs_text_q_eleven">Deactivate my account</string>
+    <string name="faqs_text_a_eleven">Please write to us at support@misteryummy.in in the event that you want to deactivate your account.</string>
+    <string name="terms_text_one">By accessing any part of the Website, you indicate that you accept these Website Terms. If you do not accept these Website Terms, you should leave the Website immediately, and you will not be able to order any products through the Website.</string>
+    <string name="terms_text_two">By accessing Mr.Yummy information and/or the Website or Service using mobile digital routes such as (but not limited to) mobile, tablet or other devices/technology including mobile applications, then you should expect that our data collection and usage as set out in this Privacy Policy will apply in that context too. We may collect technical information from your mobile device or your use of the Website or the Service through a mobile device, for example, location data and certain characteristics of, and performance data about, your device, carrier/operating system including device and connection type, IP address, mobile payment methods, interaction with other retail technology such as use of NFC Tags, QR Codes or use of mobile vouchers. Unless you have elected to remain anonymous through your device and/or platform settings, this information may be collected and used by us automatically if you use the Website or Service through your mobile device(s) via any Mr.Yummy mobile application, through your mobile’s browser or otherwise.</string>
     <!-- TODO: Remove or change this placeholder text -->
-
 
 </resources>
